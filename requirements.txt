@@ -1,3 +1,5 @@
+alembic==1.4.2
+aniso8601==8.0.0
 attrs==19.3.0
 base58==2.0.0
 bitarray==1.2.1
@@ -15,6 +17,8 @@ eth-typing==2.2.1
 eth-utils==1.9.0
 Flask==1.1.2
 flask-marshmallow==0.12.0
+Flask-Migrate==2.5.3
+flask-restplus==0.13.0
 Flask-SQLAlchemy==2.4.1
 hexbytes==0.2.0
 idna==2.9
@@ -24,6 +28,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 jsonschema==3.2.0
 lru-dict==1.1.6
+Mako==1.1.2
 MarkupSafe==1.1.1
 marshmallow==3.6.0
 marshmallow-sqlalchemy==0.23.0
@@ -33,6 +38,9 @@ parsimonious==0.8.1
 protobuf==3.11.3
 pycryptodome==3.9.7
 pyrsistent==0.16.0
+python-dateutil==2.8.1
+python-editor==1.0.4
+pytz==2020.1
 requests==2.23.0
 rlp==1.2.0
 six==1.14.0
@@ -43,5 +51,5 @@ urllib3==1.25.9
 varint==1.0.2
 web3==5.9.0
 websockets==8.1
-Werkzeug==1.0.1
+Werkzeug==0.16.1
 zipp==3.1.0
