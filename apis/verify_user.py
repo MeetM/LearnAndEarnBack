@@ -1,3 +1,4 @@
+import flask
 from flask import request
 from flask_restplus import Namespace, fields, Resource
 from models.nonce_verify import NonceVerify
@@ -21,4 +22,4 @@ class VerifyUser(Resource):
         if student is not None:
             nonce = NonceVerify.create_nonce(address)
             return {'publicAddress': student.eth_address, 'nonce': nonce}, 200
-        return {}, 200
+        return [], 200
