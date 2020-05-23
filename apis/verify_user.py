@@ -20,6 +20,10 @@ class VerifyUser(Resource):
         address = data["publicAddress"]
         student = Student.get_student_by_address(address)
         if student is not None:
-            nonce = NonceVerify.create_nonce(address)
-            return {'publicAddress': student.eth_address, 'nonce': nonce}, 200
+            return [VerifyUser.return_nonce(address)], 200
         return [], 200
+
+    @classmethod
+    def return_nonce(cls, address):
+        nonce = NonceVerify.create_nonce(address)
+        return {'publicAddress': address, 'nonce': nonce}

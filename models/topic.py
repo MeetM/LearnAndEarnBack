@@ -27,7 +27,7 @@ class Topic(db.Model):
     @staticmethod
     def _response_marshall(topic):
         return {
-            "id": topic.topic_id,
-            "name": topic.topic_name,
+            "topic_id": topic.topic_id,
+            "topic_name": topic.topic_name,
             "topic_param": topic.topic_param
         }

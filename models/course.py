@@ -29,6 +29,7 @@ class Course(db.Model):
     @staticmethod
     def _response_marshall(course):
         return {
+            "course_id": course.course_id,
             "topic_id": course.topic_id,
             "course_param": course.course_param,
             "course_name": course.course_name
